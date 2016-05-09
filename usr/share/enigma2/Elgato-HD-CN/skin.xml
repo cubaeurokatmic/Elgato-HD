@@ -387,7 +387,7 @@
   </screen>
   <!-- SecondInfoBar -->
   <screen name="SecondInfoBar" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap position="50,380" size="1180,200" zPosition="-1" pixmap="Elgato-HD-CN/menu_bg4.png" transparent="0" />
+    <ePixmap position="50,29" size="1180,550" zPosition="-1" pixmap="Elgato-HD-CN/menu_bg4.png" transparent="0" />
     <ePixmap position="998,642" size="116,62" zPosition="2" pixmap="Elgato-HD-CN/bg1.png" alphatest="blend" />
     <ePixmap position="0,593" size="1280,190" zPosition="-1" pixmap="Elgato-HD-CN/info_bg1.png" alphatest="off" />
     <eLabel position="976,646" zPosition="1" size="8,8" backgroundColor="grey" foregroundColor="background" font="Regular; 15" halign="left" />
@@ -695,6 +695,14 @@
     <eLabel text="Temp:" font="Regular; 20" position="1100,550" size="62,22" backgroundColor="background" transparent="1" halign="left" foregroundColor="un8585ff" />
     <widget source="session.CurrentService" render="Label" position="1158,550" zPosition="1" size="64,22" font="Regular; 20" halign="left" backgroundColor="background" transparent="1" foregroundColor="unb2e0b4">
       <convert type="gExtraInfo">Temperature</convert>
+    </widget>
+    <ePixmap position="378,43" size=" 15, 20" pixmap="Elgato-HD-CN/al.png" alphatest="blend" zPosition="20" />
+    <eLabel text="Eventview" position="401,39" size="500,33" font="Menu; 30" backgroundColor="background" transparent="1" foregroundColor="title" halign="center" zPosition="20" />
+    <ePixmap position="910,38" size="  35, 35" pixmap="Elgato-HD-CN/micon/tv.png" alphatest="blend" zPosition="20" />
+    <eLabel name="" position="60,80" size="1160,1" foregroundColor="background" backgroundColor="grey" />
+    <eLabel name="" position="60,390" size="1160,1" foregroundColor="background" backgroundColor="grey" />
+    <widget source="session.Event_Now" render="Label" position="204,95" size="900,280" font="Regular;26" zPosition="20">
+      <convert type="EventName">FullDescription</convert>
     </widget>
   </screen>
   <screen name="RadioInfoBar" position="center,515" size="1180,180" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">

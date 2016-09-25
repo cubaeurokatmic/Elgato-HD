@@ -1142,8 +1142,8 @@
     <eLabel position="20,55" size="480,1" backgroundColor="white" />
     <widget name="menu" position="20,65" size="480,520" itemHeight="40" scrollbarMode="showNever" selectionPixmap="Elgato-HD-CN/selpic/sel32.png" backgroundPixmap="Elgato-HD-CN/sel_bg.png" transparent="1" />
   </screen>
-  <screen name="ChannelSelection" position="center,center" size="1280,720" title="" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap position="0,0" size="1280,720" zPosition="-1" pixmap="Elgato-HD-CN/menu_ch.png" alphatest="off" />
+  <screen name="ChannelSelection" position="center,center" size="1280,713" title="" backgroundColor="transparent" flags="wfNoBorder">
+    <ePixmap position="0,5" size="1280,721" zPosition="-1" pixmap="Elgato-HD-CN/menu_ch.png" alphatest="off" />
     <widget source="Title" render="Label" position="72,19" size="630,33" font="Regular; 30" backgroundColor="background" shadowColor="black" shadowOffset="-3,-3" transparent="1" foregroundColor="yellow" />
     <ePixmap position="31,19" size="  35, 35" pixmap="Elgato-HD-CN/micon/tv.png" alphatest="blend" />
     <eLabel position="20,57" size="1240,1" backgroundColor="white" />
@@ -1206,15 +1206,15 @@
     <widget alphatest="blend" render="MSNWeatherPixmap" position="924,8" size="50,50" source="session.MSNWeather" transparent="1" zPosition="10">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/Elgato-HD-CN/weather_icons/,png</convert>
     </widget>
-    <eLabel position="20,677" size="1240,1" backgroundColor="white" />
-    <ePixmap pixmap="Elgato-HD-CN/buttons/red.png" position="70,710" size="250,2" alphatest="blend" />
-    <ePixmap pixmap="Elgato-HD-CN/buttons/green.png" position="367,710" size="250,2" alphatest="blend" />
-    <ePixmap pixmap="Elgato-HD-CN/buttons/yellow.png" position="663,710" size="250,2" alphatest="blend" />
-    <ePixmap pixmap="Elgato-HD-CN/buttons/blue.png" position="960,710" size="250,2" alphatest="blend" />
-    <widget name="key_red" position="70,680" zPosition="1" size="250,30" font="Regular;24" halign="center" backgroundColor="black" transparent="1" />
-    <widget name="key_green" position="367,680" zPosition="1" size="250,30" font="Regular;24" halign="center" backgroundColor="black" transparent="1" />
-    <widget name="key_yellow" position="663,680" zPosition="1" size="250,30" font="Regular;24" halign="center" backgroundColor="black" transparent="1" />
-    <widget name="key_blue" position="960,680" zPosition="1" size="250,30" font="Regular;24" halign="center" backgroundColor="black" transparent="1" />
+    <eLabel position="20,672" size="1240,1" backgroundColor="white" />
+    <ePixmap pixmap="Elgato-HD-CN/buttons/red.png" position="70,700" size="250,2" alphatest="blend" />
+    <ePixmap pixmap="Elgato-HD-CN/buttons/green.png" position="367,700" size="250,2" alphatest="blend" />
+    <ePixmap pixmap="Elgato-HD-CN/buttons/yellow.png" position="663,700" size="250,2" alphatest="blend" />
+    <ePixmap pixmap="Elgato-HD-CN/buttons/blue.png" position="960,700" size="250,2" alphatest="blend" />
+    <widget name="key_red" position="70,672" zPosition="1" size="250,30" font="Regular;24" halign="center" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="374,671" zPosition="1" size="250,30" font="Regular;24" halign="center" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" position="663,670" zPosition="1" size="250,30" font="Regular;24" halign="center" backgroundColor="black" transparent="1" />
+    <widget name="key_blue" position="960,670" zPosition="1" size="250,30" font="Regular;24" halign="center" backgroundColor="black" transparent="1" />
   </screen>
   <screen name="ChannelSelectionRadio" position="center,60" size="1140,432" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="  0, 0" size="1140,432" zPosition="-1" pixmap="Elgato-HD-CN/menu_ch.png" />

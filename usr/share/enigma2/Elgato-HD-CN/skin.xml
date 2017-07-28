@@ -3316,19 +3316,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget source="key_yellow" render="Label" position="550,560" zPosition="1" size="250,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" />
     <widget source="key_blue" render="Label" position="800,560" zPosition="1" size="250,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" />
   </screen>
-  <screen name="VideoEnhancementPreview" position="center,420" size=" 750,270" title="VideoEnhancementPreview" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap position="  0, 0" size="750,600" zPosition="-1" pixmap="Elgato-HD-CN/menu_bg2.png" />
-    <widget source="Title" render="Label" position="50,10" size="600, 33" halign="center" font="Menu; 30" backgroundColor="background" shadowColor="black" shadowOffset="-3,-3" transparent="1" foregroundColor="title" />
-    <ePixmap position="690,10" size=" 35, 35" pixmap="Elgato-HD-CN/micon/setup.png" alphatest="blend" />
-    <ePixmap position="25,18" size=" 15, 20" pixmap="Elgato-HD-CN/al.png" alphatest="blend" />
-    <eLabel position=" 20,55" size="710,  1" backgroundColor="white" />
-    <widget name="config" position="20,65" size="710,90" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="Elgato-HD-CN/selpic/sel30.png" transparent="1" />
-    <ePixmap position="20,165" size="710,1" pixmap="Elgato-HD-CN/selpic/sep750.png" />
-    <widget source="introduction" render="Label" position="20,175" size="710,50" font="Regular;24" halign="center" valign="center" backgroundColor="background" transparent="1" />
-    <ePixmap pixmap="Elgato-HD-CN/buttons/red.png" position=" 50,260" size="250,2" alphatest="blend" />
-    <ePixmap pixmap="Elgato-HD-CN/buttons/green.png" position="300,260" size="250,2" alphatest="blend" />
-    <widget source="key_red" render="Label" position=" 50,230" zPosition="1" size="250,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" />
-    <widget source="key_green" render="Label" position="300,230" zPosition="1" size="250,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" />
+  <screen name="VideoEnhancementSetup" position="center,center" size="1130,520" title="VideoEnhancementSetup">
+    <ePixmap position="10,466" size="30,30" pixmap="Elgato-HD-CN/buttons/red.png" alphatest="on" zPosition="1" />
+    <ePixmap position="294,466" size="30,30" pixmap="Elgato-HD-CN/buttons/green.png" alphatest="on" zPosition="3" />
+    <ePixmap position="577,466" size="30,30" pixmap="Elgato-HD-CN/buttons/yellow.png" alphatest="on" zPosition="3" />
+    <ePixmap position="865,466" size="30,30" pixmap="Elgato-HD-CN/buttons/blue.png" alphatest="on" zPosition="1" />
+    <widget source="key_red" render="Label" position="10,460" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+    <widget source="key_green" render="Label" position="293,460" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+    <widget source="key_yellow" render="Label" position="577,460" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+    <widget source="key_blue" render="Label" position="865,460" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+    <widget name="config" position="20,20" size="1090,350" scrollbarMode="showOnDemand" transparent="1" />
+    <widget source="introduction" render="Label" position="290,420" size="550,25" zPosition="10" font="Regular;22" halign="center" valign="center" foregroundColor="white" backgroundColor="transpBlack" transparent="1" />
   </screen>
   <screen name="VideoFinetune" position="0,0" size="1280,720" backgroundColor="black">
     <widget source="Canvas" render="Canvas" position="280,70" size="720,576" />
@@ -3346,7 +3344,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget source="key_red" render="Label" position=" 50,560" zPosition="1" size="250,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="300,560" zPosition="1" size="250,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" />
   </screen>
-  <screen name="Volume" position="1083,30" size="140,50" title="Volume" flags="wfNoBorder">
+  <screen name="Volume" position="450,30" size="140,50" title="Volume" flags="wfNoBorder">
     <ePixmap pixmap="Elgato-HD-CN/volume.png" position="0,0" size="140,50" zPosition="-2" alphatest="blend" />
     <widget render="cnVolumeText" position="68,6" size="67,38" font="Regular;38" foregroundColor="black" backgroundColor="kGri" source="global.CurrentTime" halign="center" valign="center" shadowOffset="0,0" shadowColor="grey" />
   </screen>
@@ -3794,6 +3792,32 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget name="key_blue" position="645,550" zPosition="1" size="150,30" font="Regular;24" halign="left" backgroundColor="background" transparent="1" />
     <eLabel name="" position="157,10" size="500,40" transparent="1" zPosition="2" text="Softcam Panel" halign="center" font="Regular; 35" foregroundColor="cyan1" />
   </screen>
+<screen name="SoftcamPanel" position="0,0" size="1280,720" title="Softcam Panel" flags="wfNoBorder" backgroundColor="transparent">
+  <ePixmap position="0,0" size="1280,720" zPosition="-1" pixmap="Elgato-HD-CN/menu_bg7.png" />
+  <ePixmap pixmap="Elgato-HD-CN/icons/softcam.png" zPosition="2" position="835,283" size="250,250" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" halign="left" position="40,39" size="536,103" font="Regular; 78" backgroundColor="background1" transparent="1" />
+  <widget source="global.CurrentTime" render="Label" position="1115,104" size="121,29" font="Regular; 25" backgroundColor="transpBlack" transparent="1" foregroundColor="lightgrey" halign="center">
+    <convert type="ClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1110,60" size="130,45" font="Regular; 45" backgroundColor="transpBlack" transparent="1" foregroundColor="lightgrey" halign="center" valign="center">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <eLabel backgroundColor="grey" position="50,316" size="642,1" zPosition="1" foregroundColor="background1" />
+  <eLabel backgroundColor="grey" position="50,359" size="642,1" zPosition="1" foregroundColor="background1" />
+  <widget font="Regular;18" name="camcount" position="627,326" size="60,25" transparent="1" />
+  <widget name="config" position="50,209" size="642,100" transparent="1" font="Replacement; 22" backgroundColor="background1" />
+  <ePixmap pixmap="Elgato-HD-CN/buttons/red.png" position="49,159" size="30,30" alphatest="blend" />
+  <ePixmap pixmap="Elgato-HD-CN/buttons/green.png" position="211,159" size="30,30" alphatest="blend" />
+  <ePixmap pixmap="Elgato-HD-CN/buttons/yellow.png" position="373,159" size="30,30" alphatest="blend" />
+  <ePixmap pixmap="Elgato-HD-CN/buttons/blue.png" position="538,159" size="30,30" alphatest="blend" />
+  <widget font="Replacement; 24" halign="center" name="key_red" position="82,158" size="120,35" transparent="1" valign="center" zPosition="2" backgroundColor="background1" />
+  <widget font="Replacement; 24" halign="center" name="key_green" position="246,158" size="120,35" transparent="1" valign="center" zPosition="2" backgroundColor="background1" />
+  <widget font="Replacement; 24" halign="center" name="key_yellow" position="410,157" size="120,35" transparent="1" valign="center" zPosition="2" backgroundColor="background1" />
+  <widget font="Replacement; 24" halign="center" name="key_blue" position="572,157" size="120,35" transparent="1" valign="center" zPosition="2" backgroundColor="background1" />
+  <widget font="Replacement; 22" name="actifcam" position="53,322" size="303,28" transparent="1" backgroundColor="background1" />
+  <widget font="Regular; 22" name="actifcam2" position="370,322" size="246,32" transparent="1" backgroundColor="transpBlack" />
+  <widget font="Replacement; 22" name="ecminfo" position="50,364" size="642,308" transparent="1" backgroundColor="background1" foregroundColor="grey" />
+</screen>
   <screen name="EsiPanel" position="0,0" size="1280,720" title="EsiPanel" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="0,0" size="1280,720" zPosition="-1" pixmap="Elgato-HD-CN/menu_bg5.png" />
     <ePixmap position="48,160" size="650,450" zPosition="5" pixmap="Elgato-HD-CN/uplist.png" alphatest="blend" transparent="1" />
@@ -3808,4 +3832,26 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget name="Mlist" position="48,160" size="650,450" zPosition="5" scrollbarMode="showNever" transparent="1" />
     <widget name="label1" position="200,670" size="641,30" font="Regular; 35" transparent="1" foregroundColor="lightgrey" halign="center" backgroundColor="black" />
   </screen>
+<screen name="MSNWeatherPlugin" position="0,0" size="1280,720" title="Weather Plugin" flags="wfNoBorder" backgroundColor="transparent">
+  <ePixmap pixmap="Elgato-HD-CN/weatherback.png" position="0,0" size="1280,720" zPosition="-1" alphatest="on" />
+  <widget render="Label" source="caption" position="66,27" size="573,57" font="Replacement; 30" zPosition="1" transparent="1" backgroundColor="black" foregroundColor="white" halign="left" valign="center" />
+  <widget render="Label" source="observationtime" position="475,383" zPosition="1" size="244,30" font="bold; 18" transparent="1" halign="right" backgroundColor="black" valign="center" foregroundColor="un808888" />
+  <widget render="Label" source="observationpoint" position="65,383" zPosition="1" size="404,30" font="bold; 18" transparent="1" halign="left" backgroundColor="black" valign="center" foregroundColor="un808888" />
+  <widget name="currenticon" position="160,96" zPosition="1" size="175,120" alphatest="blend" transparent="1" />
+  <widget render="Label" source="currentTemp" position="358,96" zPosition="1" size="239,120" font="Replacement; 75" transparent="1" backgroundColor="black" halign="center" valign="top" />
+  <widget render="Label" source="feelsliketemp" position="393,189" zPosition="1" size="173,27" font="Replacement; 22" transparent="1" backgroundColor="black" halign="center" />
+  <widget render="Label" source="condition" position="71,245" zPosition="1" size="382,35" font="Replacement; 22" transparent="1" backgroundColor="black" halign="left" valign="center" foregroundColor="grey" />
+  <widget render="Label" source="wind_condition" position="71,289" zPosition="1" size="218,35" font="Replacement; 22" transparent="1" backgroundColor="black" halign="left" valign="center" foregroundColor="grey" />
+  <widget render="Label" source="humidity" position="71,338" zPosition="1" size="218,35" font="Replacement; 22" valign="center" transparent="1" backgroundColor="black" halign="left" foregroundColor="grey" />
+  <widget render="Label" source="weekday2" position="35,434" zPosition="1" size="205,57" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
+  <widget name="weekday2_icon" position="78,507" zPosition="1" size="115,80" alphatest="blend" transparent="1" />
+  <widget render="Label" source="weekday2_temp" position="36,603" zPosition="1" size="202,75" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
+  <widget render="Label" source="weekday3_temp" position="271,603" zPosition="1" size="202,75" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
+  <widget name="weekday3_icon" position="313,507" zPosition="1" size="115,80" alphatest="blend" transparent="1" />
+  <widget render="Label" source="weekday3" position="270,434" zPosition="1" size="205,57" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
+  <widget render="Label" source="weekday4_temp" position="500,603" zPosition="1" size="202,75" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
+  <widget name="weekday4_icon" position="549,507" zPosition="1" size="115,80" alphatest="blend" transparent="1" />
+  <widget render="Label" source="weekday4" position="499,433" zPosition="1" size="205,57" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
+  <widget render="Label" source="statustext" position="235,136" zPosition="0" size="0,465" font="Regular;20" halign="center" valign="center" transparent="1" backgroundColor="background" />
+</screen>
 </skin>

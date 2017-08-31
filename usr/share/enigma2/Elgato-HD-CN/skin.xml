@@ -256,6 +256,11 @@
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_4k_on.png" position="881,123" size="40,18" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">VideoHeight</convert>
+    <convert type="ValueRange">1081,5000</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/fta.png" position="702,122" size="40,18" zPosition="1" alphatest="blend">
       <convert type="ServiceInfoEX">IsFta</convert>
       <convert type="ConditionalShowHide" />
@@ -510,6 +515,11 @@
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_4k_on.png" position="881,123" size="40,18" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">VideoHeight</convert>
+    <convert type="ValueRange">1081,5000</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
     <ePixmap pixmap="Elgato-HD-CN/icons/ico_crypt_off.png" position="702,642" size="40,18" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_crypt_on.png" position="702,642" size="40,18" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsCrypted</convert>
@@ -849,6 +859,11 @@
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_4k_on.png" position="881,123" size="40,18" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">VideoHeight</convert>
+    <convert type="ValueRange">1081,5000</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
     <widget source="session.CurrentService" render="Label" zPosition="4" position="1042,50" size="52,28" halign="center" font="Regular; 20" foregroundColor="unb2e0b4" transparent="1" backgroundColor="background">
       <convert type="ServiceInfo">VideoWidth</convert>
     </widget>
@@ -2251,6 +2266,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_4k_on.png" position="881,123" size="40,18" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">VideoHeight</convert>
+    <convert type="ValueRange">1081,5000</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
     <widget source="session.CurrentService" render="Label" zPosition="4" position="1042,50" size="52,28" halign="center" font="Regular; 20" foregroundColor="unb2e0b4" transparent="1" backgroundColor="background">
       <convert type="ServiceInfo">VideoWidth</convert>
     </widget>

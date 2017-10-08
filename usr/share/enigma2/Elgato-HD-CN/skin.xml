@@ -1,5 +1,5 @@
 <skin>
-  <!-- Elgato-HD-CN Mod (CiNo) skin by Kerni Mod-OpenESI-->
+  <!-- Elgato-HD-CN Mod (CiNo) skin by Kerni Mod-OpenESI-07-10-2017-->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
   </output>
@@ -256,11 +256,15 @@
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_4k_on.png" position="881,123" size="40,18" zPosition="2" alphatest="blend">
+<widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_4k_on.png" position="881,123" size="40,18" zPosition="2" alphatest="blend">
     <convert type="ServiceInfo">VideoHeight</convert>
     <convert type="ValueRange">1081,5000</convert>
     <convert type="ConditionalShowHide" />
   </widget>
+<widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_iptv_on.png" position="881,123" size="40,18" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsStream</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/fta.png" position="702,122" size="40,18" zPosition="1" alphatest="blend">
       <convert type="ServiceInfoEX">IsFta</convert>
       <convert type="ConditionalShowHide" />
@@ -515,11 +519,15 @@
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_4k_on.png" position="881,123" size="40,18" zPosition="2" alphatest="blend">
+<widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_4k_on.png" position="881,123" size="40,18" zPosition="2" alphatest="blend">
     <convert type="ServiceInfo">VideoHeight</convert>
     <convert type="ValueRange">1081,5000</convert>
     <convert type="ConditionalShowHide" />
   </widget>
+<widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_iptv_on.png" position="881,123" size="40,18" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsStream</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
     <ePixmap pixmap="Elgato-HD-CN/icons/ico_crypt_off.png" position="702,642" size="40,18" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_crypt_on.png" position="702,642" size="40,18" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsCrypted</convert>
@@ -859,11 +867,15 @@
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_4k_on.png" position="881,123" size="40,18" zPosition="2" alphatest="blend">
+<widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_4k_on.png" position="881,123" size="40,18" zPosition="2" alphatest="blend">
     <convert type="ServiceInfo">VideoHeight</convert>
     <convert type="ValueRange">1081,5000</convert>
     <convert type="ConditionalShowHide" />
   </widget>
+<widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_iptv_on.png" position="881,123" size="40,18" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsStream</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
     <widget source="session.CurrentService" render="Label" zPosition="4" position="1042,50" size="52,28" halign="center" font="Regular; 20" foregroundColor="unb2e0b4" transparent="1" backgroundColor="background">
       <convert type="ServiceInfo">VideoWidth</convert>
     </widget>
@@ -1158,7 +1170,7 @@
     <widget name="menu" position="20,65" size="480,520" itemHeight="40" scrollbarMode="showNever" selectionPixmap="Elgato-HD-CN/selpic/sel32.png" backgroundPixmap="Elgato-HD-CN/sel_bg.png" transparent="1" />
   </screen>
   <screen name="ChannelSelection" position="center,center" size="1280,713" title="" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap position="0,5" size="1280,721" zPosition="-1" pixmap="Elgato-HD-CN/menu_ch.png" alphatest="off" />
+    <ePixmap position="0,5" size="1280,721" zPosition="-1" pixmap="Elgato-HD-CN/luce.png" alphatest="off" />
     <widget source="Title" render="Label" position="72,19" size="630,33" font="Regular; 30" backgroundColor="background" shadowColor="black" shadowOffset="-3,-3" transparent="1" foregroundColor="yellow" />
     <ePixmap position="31,19" size="  35, 35" pixmap="Elgato-HD-CN/micon/tv.png" alphatest="blend" />
     <eLabel position="20,57" size="1240,1" backgroundColor="white" />
@@ -2028,60 +2040,51 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="key_yellow" position="490,560" zPosition="1" size="220,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" />
     <widget name="key_blue" position="710,560" zPosition="1" size="350,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" />
   </screen>
-  <screen name="MediaPlayer" position="0,0" size="1280,720" title="MediaPlayer" flags="wfNoBorder" backgroundColor="background">
-    <ePixmap pixmap="Elgato-HD-CN/menu_ch.png" position="0,0" zPosition="-10" size="1280,720" />
-    <eLabel position="402,72" size="480,2" backgroundColor="background2" />
-    <widget source="global.CurrentTime" render="Label" position="65,44" size="180,25" zPosition="1" font="Regular;25" halign="left" backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+  <screen name="MediaPlayer" position="0,0" size="1280,720" title="MediaPlayer" backgroundColor="transparent" flags="wfNoBorder">
+    <ePixmap position="0,0" size="1283,720" zPosition="-13" pixmap="Elgato-HD-CN/mediaplayer.png" />
+    <ePixmap position="570,547" size="463,87" zPosition="1" pixmap="Elgato-HD-CN/icons/back_pointer.png" transparent="1" alphatest="blend" />
+    <ePixmap position="815,290" size="264,264" zPosition="15" pixmap="Elgato-HD-CN/icons/coverup.png" transparent="1" alphatest="blend" />
+    <ePixmap position="3,6" size="20,20" zPosition="5" pixmap="Elgato-HD-CN/cicon.png" transparent="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="96,4" size="281,25" font="Regula; 21" halign="center" backgroundColor="bleue" transparent="1" valign="center">
+      <convert type="ClockToText">Date</convert>
     </widget>
-    <widget source="Title" render="Label" position="402,26" size="480,40" zPosition="1" halign="center" font="Menu; 36" backgroundColor="background" shadowColor="black" shadowOffset="-3,-3" transparent="1" foregroundColor="title" />
-    <widget source="global.CurrentTime" render="Label" position="1100,44" size="110,25" zPosition="1" font="Regular;25" halign="right" backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1">
-      <convert type="ClockToText">WithSeconds</convert>
+    <widget source="global.CurrentTime" render="Label" position="28,4" size="65,25" font="Regula; 21" backgroundColor="bleue" transparent="1" halign="center" valign="center">
+      <convert type="ClockToText">Default</convert>
     </widget>
-    <eLabel text="F I L E L I S T" position=" 70,105" size="470, 40" font="Menu; 28" halign="center" valign="center" foregroundColor="unffcc00" backgroundColor="background" transparent="1" />
-    <ePixmap position=" 70,145" size="470,  1" zPosition="3" pixmap="Elgato-HD-CN/selpic/sep450.png" />
-    <widget name="filelist" enableWrapAround="1" position=" 70,160" size="470,500" itemHeight="25" scrollbarMode="showOnDemand" selectionPixmap="Elgato-HD-CN/selpic/sel25nt.png" transparent="1" />
-    <widget name="artisttext" position="580,110" size="150, 25" font="Regular;22" valign="top" foregroundColor="un99bad6" transparent="1" />
-    <widget name="artist" position="730,110" size="310, 25" font="Regular;22" valign="top" transparent="1" />
-    <widget name="albumtext" position="580,150" size="150, 25" font="Regular;22" valign="top" foregroundColor="un99bad6" transparent="1" />
-    <widget name="album" position="730,150" size="310, 25" font="Regular;22" valign="top" transparent="1" />
-    <widget name="yeartext" position="580,190" size="150, 25" font="Regular;22" valign="top" foregroundColor="un99bad6" transparent="1" />
-    <widget name="year" position="730,190" size="310, 25" font="Regular;22" valign="top" transparent="1" />
-    <widget name="genretext" position="580,230" size="150, 25" font="Regular;22" valign="top" foregroundColor="un99bad6" transparent="1" />
-    <widget name="genre" position="730,230" size="310, 25" font="Regular;22" valign="top" transparent="1" />
-    <widget name="titletext" position="580,270" size="150, 25" font="Regular;22" valign="top" foregroundColor="un99bad6" transparent="1" />
-    <widget name="title" position="730,270" size="400, 27" font="Regular;24" valign="top" transparent="1" />
-    <widget name="repeat" position="1103,100" size=" 70,30" pixmaps="Elgato-HD-CN/buttons/repeat_off.png,Elgato-HD-CN/buttons/repeat_on.png" alphatest="blend" />
-    <widget name="coverArt" position="1080,145" size="116,116" pixmap="skin_default/no_coverArt.png" transparent="1" alphatest="blend" />
-    <ePixmap position=" 577,310" size="608,14" pixmap="Elgato-HD-CN/prog_mp_bg.png" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Progress" position=" 577,310" size="608,14" pixmap="Elgato-HD-CN/prog_mp.png" zPosition="2" transparent="1">
+    <eLabel backgroundColor="white" position="90,305" size="350,1" />
+    <eLabel text="F i l e l i s t" position="57,69" size="410,77" zPosition="5" halign="center" font="Regula; 66" backgroundColor="bleue" transparent="1" />
+    <widget name="coverArt" position="822,297" size="250,250" pixmap="Elgato-HD-CN/icons/no_coverArt.png" alphatest="blend" />
+    <widget name="filelist" position="6,156" size="520,140" zPosition="3" itemHeight="35" selectionPixmap="Elgato-HD-CN/selVIII.png" scrollbarMode="showNever" transparent="1" />
+    <widget name="artisttext" position="576,136" size="110,35" font="Bold; 22" valign="center" backgroundColor="bleue" transparent="1" />
+    <widget name="artist" position="689,136" size="514,35" font="Regula; 22" valign="center" backgroundColor="bleue" transparent="1" halign="center" />
+    <widget name="albumtext" position="576,173" size="110,35" font="Bold; 22" valign="center" backgroundColor="bleue" transparent="1" />
+    <widget name="album" position="688,173" size="514,35" font="Regula; 22" valign="center" backgroundColor="bleue" transparent="1" halign="center" />
+    <widget name="yeartext" position="576,210" size="110,35" font="Bold; 22" valign="center" backgroundColor="bleue" transparent="1" />
+    <widget name="year" position="688,210" size="512,35" font="Regula; 22" valign="center" backgroundColor="bleue" transparent="1" halign="center" />
+    <widget name="genretext" position="575,247" size="110,35" font="Bold; 22" valign="center" backgroundColor="bleue" transparent="1" />
+    <widget name="genre" position="688,247" size="512,35" font="Regula; 22" backgroundColor="bleue" transparent="1" halign="center" />
+    <widget name="title" position="573,4" size="698,121" font="Regula; 70" valign="center" backgroundColor="bleue" transparent="1" halign="left" foregroundColor="white" />
+    <eLabel text="P l a y l i s t" position="59,317" size="410,77" zPosition="5" halign="center" font="Regula; 66" backgroundColor="bleue" transparent="1" />
+    <widget name="playlist" position="6,404" size="520,140" zPosition="3" itemHeight="35" selectionPixmap="Elgato-HD-CN/selVIII.png" scrollbarMode="showNever" transparent="1" />
+    <widget borderColor="foreground" borderWidth="0" pixmap="Elgato-HD-CN/icons/position_pointer.png" position="601,583" size="400,15" render="Progress" source="session.CurrentService" transparent="1" zPosition="9">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position=" 582,331" size="100,22" font="Regular;22" halign="left" backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1" foregroundColor="unb2e0b4">
+    <widget source="session.CurrentService" render="Label" position="1040,574" size="85,45" font="Regula; 28" halign="right" noWrap="1" transparent="1" backgroundColor="bleue">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1080,331" size="100,22" font="Regular;22" halign="right" backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1" foregroundColor="unb2e0b4">
-      <convert type="ServicePosition">Remaining,Negate</convert>
+    <eLabel text="/" position="1133,572" size="20,39" font="Regula; 28" halign="center" transparent="1" backgroundColor="bleue" />
+    <widget source="session.CurrentService" render="Label" position="1160,574" size="97,45" font="Regula; 28" halign="left" noWrap="1" transparent="1" backgroundColor="bleue">
+      <convert type="ServicePosition">Length</convert>
     </widget>
-    <eLabel text="P L A Y L I S T" position="580,355" size="610, 40" font="Menu; 28" halign="center" valign="center" foregroundColor="unffcc00" backgroundColor="background" transparent="1" />
-    <ePixmap position="580,395" size="610,  1" zPosition="3" pixmap="Elgato-HD-CN/selpic/sep610.png" />
-    <widget name="playlist" enableWrapAround="1" position="580,410" size="610,250" itemHeight="25" scrollbarMode="showOnDemand" selectionPixmap="Elgato-HD-CN/selpic/sel25nt.png" transparent="1" selectionDisabled="1" />
-    <widget name="currenttext" position="0,0" size="0,0" />
-    <widget name="PositionGauge" position="0,0" size="0,0" />
-  </screen>
-  <screen name="MediaPlayerSettings" position="center,center" size="750,600" title="MediaPlayerSettings" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap position="0,0" size="750,600" zPosition="-1" pixmap="Elgato-HD-CN/menu_bg2.png" />
-    <eLabel text="MediaPlayer" position="65,10" size="300, 33" halign="right" font="Menu; 30" backgroundColor="background" shadowColor="black" shadowOffset="-3,-3" transparent="1" foregroundColor="title" />
-    <eLabel text="Setup" position=" 375,12" size="280, 33" halign="left" font="Menu; 30" backgroundColor="background" shadowColor="black" shadowOffset="-3,-3" transparent="1" foregroundColor="title" />
-    <ePixmap position="25,18" size=" 15, 20" pixmap="Elgato-HD-CN/al.png" alphatest="blend" />
-    <ePixmap position="690,10" size="  35, 35" pixmap="Elgato-HD-CN/micon/movie.png" alphatest="blend" />
-    <eLabel position=" 20,55" size="710,  1" backgroundColor="white" />
-    <widget name="config" position="20,65" size="710,480" zPosition="1" itemHeight="32" scrollbarMode="showOnDemand" selectionPixmap="Elgato-HD-CN/selpic/sel32.png" transparent="1" />
-    <eLabel position="20,555" size="710,1" backgroundColor="white" />
-    <ePixmap pixmap="Elgato-HD-CN/buttons/red.png" position=" 50,590" size="250,2" alphatest="blend" />
-    <ePixmap pixmap="Elgato-HD-CN/buttons/green.png" position="300,590" size="250,2" alphatest="blend" />
-    <widget source="key_red" render="Label" position=" 50,560" zPosition="1" size="250,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" />
-    <widget source="key_green" render="Label" position="300,560" zPosition="1" size="250,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="1,597" size="175,120" source="session.MSNWeather" transparent="1" zPosition="8">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/Elgato-HD-CN/weather_icons/,png</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="bleue" font="Regula; 40" render="Label" position="211,597" size="132,71" source="session.MSNWeather" transparent="1" zPosition="8" halign="left">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="bleue" font="Regula; 21" render="Label" position="211,693" size="273,25" source="session.MSNWeather" zPosition="3" halign="left" transparent="1">
+      <convert type="MSNWeather">temperature_text,current</convert>
+    </widget>
   </screen>
   <screen name="MessageBox" position="340,175" size="600,10" title="Message">
     <widget name="text" position="120,20" size="600,0" font="Regular; 22" />
@@ -2266,11 +2269,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_4k_on.png" position="881,123" size="40,18" zPosition="2" alphatest="blend">
+<widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_4k_on.png" position="881,123" size="40,18" zPosition="2" alphatest="blend">
     <convert type="ServiceInfo">VideoHeight</convert>
     <convert type="ValueRange">1081,5000</convert>
     <convert type="ConditionalShowHide" />
   </widget>
+<widget source="session.CurrentService" render="Pixmap" pixmap="Elgato-HD-CN/icons/ico_iptv_on.png" position="881,123" size="40,18" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsStream</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
     <widget source="session.CurrentService" render="Label" zPosition="4" position="1042,50" size="52,28" halign="center" font="Regular; 20" foregroundColor="unb2e0b4" transparent="1" backgroundColor="background">
       <convert type="ServiceInfo">VideoWidth</convert>
     </widget>
